@@ -2,6 +2,7 @@
   font-family: system-ui, sans-serif;
   color: #18223b;
   background: #f4f6fb;
+  line-height: 1.5;
 }
 
 * { box-sizing: border-box; }
@@ -44,19 +45,51 @@ button:focus-visible { outline: 3px solid #18223b; outline-offset: 3px; }
 
 .subject-grid li {
   display: flex;
+  min-width: 0;
+}
+
+.subject-grid a {
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   min-height: 100px;
   padding: 1rem 0.5rem;
   border: 1px solid #dce1ed;
   border-radius: 0.5rem;
   background: #eef1fa;
+  color: inherit;
   font-weight: 600;
   text-align: center;
+  text-decoration: none;
   overflow-wrap: anywhere;
 }
 
+.subject-grid a:hover {
+  background: #dce4fa;
+  border-color: #3156d3;
+}
+
+.subject-grid a:focus-visible {
+  outline: 3px solid #3156d3;
+  outline-offset: 3px;
+}
+
+body > h1 {
+  width: min(100% - 2rem, 48rem);
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: white;
+}
+
 @media (max-width: 600px) {
+  .container,
+  body > h1 {
+    margin: 2rem auto;
+    padding: 1.25rem;
+  }
+
   .subject-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

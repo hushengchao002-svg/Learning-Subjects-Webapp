@@ -7,6 +7,7 @@ A simple HTML, CSS, and JavaScript starter. No dependencies or build step requir
 ```text
 web-app/
 ├── index.html          # Main page
+├── pages/              # Subject HTML pages
 ├── src/
 │   ├── styles/
 │   │   └── main.css    # App styles
@@ -34,6 +35,7 @@ Then visit http://localhost:8000. Stop the server with Ctrl+C.
 ## Develop
 
 - Edit `index.html` to change page content.
+- Edit the HTML files in `pages/` to change subject pages.
 - Edit `src/styles/main.css` to change appearance.
 - Edit `src/scripts/main.js` to add behavior.
 - Put images in `public/assets/` and reference them as `./public/assets/filename.png`.

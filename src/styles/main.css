@@ -30,6 +30,30 @@ button {
 button:hover { background: #2343ad; }
 button:focus-visible { outline: 3px solid #18223b; outline-offset: 3px; }
 
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  border: 1px solid #dce1ed;
+  border-radius: 0.5rem;
+  background: #eef1fa;
+  color: #2343ad;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background: #dce4fa;
+  border-color: #3156d3;
+}
+
+.back-button:focus-visible {
+  outline: 3px solid #3156d3;
+  outline-offset: 3px;
+}
+
 .subjects {
   margin-top: 2rem;
 }

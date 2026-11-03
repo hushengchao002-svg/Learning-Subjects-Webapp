@@ -72,6 +72,7 @@ button:focus-visible { outline: 3px solid #18223b; outline-offset: 3px; }
   min-width: 0;
 }
 
+.subject-grid li:not(:has(a)),
 .subject-grid a {
   display: flex;
   align-items: center;
